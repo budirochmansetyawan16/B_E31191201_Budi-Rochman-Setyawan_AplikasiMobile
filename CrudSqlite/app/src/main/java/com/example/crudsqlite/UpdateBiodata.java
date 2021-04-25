@@ -1,7 +1,6 @@
 package com.example.crudsqlite;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
@@ -57,7 +56,6 @@ public class UpdateBiodata extends AppCompatActivity {
                 finish();
             }
         });
-
         ton2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

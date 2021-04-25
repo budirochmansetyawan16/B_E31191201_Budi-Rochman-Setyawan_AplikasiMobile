@@ -9,14 +9,6 @@
     android:paddingRight="16dp"
     android:paddingBottom="16dp"
     tools:context="com.example.crudsqlite.MainActivity">
-    <ListView
-        android:id="@+id/listView1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/button2"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true" />
     <Button
         android:id="@+id/button2"
         style="?android:attr/borderlessButtonStyle"
@@ -24,9 +16,15 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
         android:drawableLeft="@drawable/icon_add"
         android:text="Buat Biodata Baru"
         android:textColor="#000000" />
-
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true" />
 </RelativeLayout>

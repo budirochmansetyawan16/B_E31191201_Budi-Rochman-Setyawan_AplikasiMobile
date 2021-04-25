@@ -44,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     void RefreshList() {
+        //menampilkan data pada tabel biodata
         SQLiteDatabase db = dbcenter.getReadableDatabase();
         cursor = db.rawQuery("SELECT * FROM biodata", null);
         daftar = new String[cursor.getCount()];
@@ -51,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
 
         for (int cc = 0; cc < cursor.getCount(); cc++) {
             cursor.moveToPosition(cc);
-            daftar[cc] = cursor.getString(1).toString();
+            daftar[cc] = cursor.getString(1).toString(); //mengambil nama
         }
         ListView01 = (ListView) findViewById(R.id.listView1);
         ListView01.setAdapter(new ArrayAdapter(this, android.R.layout.simple_list_item_1, daftar));
